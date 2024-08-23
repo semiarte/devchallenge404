@@ -1,0 +1,51 @@
+.montserrat {
+    font-family: Montserrat, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header p {
+    font-family: Inconsolata, system-ui;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25.18px;
+    letter-spacing: -0.08em;
+}
+
+main {
+    font-size: 18px;
+    @include respond-above(sm) {
+        font-size: 24px;
+    }
+    h1 {
+        font-size: 2.6666666666666665em;
+        font-weight: 700;
+        line-height: 94.78px;
+        letter-spacing: -0.035em;
+        margin-top: 0;
+        margin-bottom: 36px;
+        @include respond-belowe(sm) {
+            line-height: 71.09px;
+        }
+    }
+    p {
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 35.54px;
+        letter-spacing: -0.035em;
+        margin-top: 0;
+        margin-bottom: 64px;
+    }
+}
+
+footer {
+    p.montserrat {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: center;
+    }
+    span {
+        font-weight: 700;
+    }
+}

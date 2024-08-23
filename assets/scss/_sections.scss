@@ -1,0 +1,41 @@
+body {
+    font-family: monospace;
+    font-size: 14px;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+    max-width: 1140px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    .col {
+        position: relative;
+        width: 100%;
+        @include respond-above(sm) {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
