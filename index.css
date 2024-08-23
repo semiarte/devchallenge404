@@ -102,6 +102,7 @@ button {
   padding: 24px 43px;
   letter-spacing: -0.035em;
   text-align: center;
+  transition: all ease-in-out 0.3s;
 }
 button.black {
   background-color: #333;
